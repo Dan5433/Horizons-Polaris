@@ -16,6 +16,8 @@ public class PlayerInteract : MonoBehaviour
     {
         RotatePlayerToMouse();
 
+        Debug.DrawRay(transform.position, transform.up, Color.red);
+
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, reachDistance);
         if (!hit)
             return;

@@ -446,6 +446,7 @@ GameObject:
   - component: {fileID: 1318830022}
   - component: {fileID: 1318830021}
   - component: {fileID: 1318830020}
+  - component: {fileID: 1318830023}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -573,6 +574,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1318830023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318830019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5280298b8a4e8643aa650b03301fd01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Computer
 --- !u!1 &1533709168
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,7 +726,7 @@ GameObject:
   - component: {fileID: 2036047750}
   - component: {fileID: 2036047752}
   - component: {fileID: 2036047753}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
