@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class FileManager : Singleton<FileManager>
 {
-    public static string RootPath => Path.GetDirectoryName(Application.dataPath);
+    public static string RoomDirectoryPath => Path.Combine(Path.GetDirectoryName(Application.dataPath), Instance.roomDirectoryName);
 
     [SerializeField] string roomDirectoryName;
 
@@ -15,7 +15,7 @@ public class FileManager : Singleton<FileManager>
     void CloneEmptyRoom()
     {
         string emptyRoomStreamingPath = Path.Combine(Application.streamingAssetsPath, Instance.roomDirectoryName);
-        string emptyRoomCopyPath = Path.Combine(RootPath, Instance.roomDirectoryName);
+        string emptyRoomCopyPath = RoomDirectoryPath;
         CloneDirectory(emptyRoomStreamingPath, emptyRoomCopyPath);
     }
 

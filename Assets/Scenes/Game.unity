@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05b5702d0f41125448eb1051250f8865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FileManager
-  roomDirectoryName: -ROOM-
+  roomDirectoryName: -=[ROOM]=-
 --- !u!1 &196025067
 GameObject:
   m_ObjectHideFlags: 0
