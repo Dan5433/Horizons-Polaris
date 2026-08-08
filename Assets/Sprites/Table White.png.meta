@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cd0712a095169a942966d470fe247703
+guid: 4b55fcf08ecca2346b633de8d56ff85c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5398871666063446498
-    second: Whiteboard_0
+      213: -2512221144757659057
+    second: Table_White_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
-  spriteBorder: {x: 1, y: 0, z: 1, w: 0}
+  spriteBorder: {x: 3, y: 3, z: 3, w: 3}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Whiteboard_0
+      name: Table_White_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 4
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e112a30d25acea40800000000000000
-      internalID: 5398871666063446498
+      spriteID: f4a9e7ddd2cc22dd0800000000000000
+      internalID: -2512221144757659057
       vertices: []
       indices: 
       edges: []
