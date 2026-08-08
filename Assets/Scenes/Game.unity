@@ -1569,7 +1569,7 @@ GameObject:
   - component: {fileID: 906964763}
   - component: {fileID: 906964762}
   m_Layer: 0
-  m_Name: TV_Side_Table_1
+  m_Name: Table 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1643,7 +1643,7 @@ Transform:
   m_GameObject: {fileID: 906964761}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.7000003, y: -3.921, z: 0}
+  m_LocalPosition: {x: 4, y: -3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1751,7 +1751,7 @@ GameObject:
   - component: {fileID: 1016302924}
   - component: {fileID: 1016302923}
   m_Layer: 0
-  m_Name: Table_Brown
+  m_Name: Sofa Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1825,7 +1825,7 @@ Transform:
   m_GameObject: {fileID: 1016302922}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.28, y: 2.9571002, z: 0}
+  m_LocalPosition: {x: 0, y: 3.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2082,7 +2082,7 @@ GameObject:
   - component: {fileID: 1292625595}
   - component: {fileID: 1292625594}
   m_Layer: 0
-  m_Name: TV_Side_Table_2
+  m_Name: Table 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2156,7 +2156,7 @@ Transform:
   m_GameObject: {fileID: 1292625593}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.1, y: -3.49, z: 0}
+  m_LocalPosition: {x: 1.75, y: -3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2295,7 +2295,7 @@ GameObject:
   - component: {fileID: 1396502046}
   - component: {fileID: 1396502045}
   m_Layer: 0
-  m_Name: TV_Side_Table_3
+  m_Name: Table 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2369,7 +2369,7 @@ Transform:
   m_GameObject: {fileID: 1396502044}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.630001, y: -3.49, z: 0}
+  m_LocalPosition: {x: -0.5, y: -3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2386,7 +2386,7 @@ GameObject:
   - component: {fileID: 1495864298}
   - component: {fileID: 1495864297}
   m_Layer: 0
-  m_Name: TV_Side_Sofa
+  m_Name: Sofa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2460,7 +2460,7 @@ Transform:
   m_GameObject: {fileID: 1495864296}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: -7.320001, y: 4.967099, z: 0}
+  m_LocalPosition: {x: 0, y: 5.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2491,12 +2491,12 @@ Transform:
   m_GameObject: {fileID: 1528036756}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1292625595}
   - {fileID: 906964763}
+  - {fileID: 1292625595}
   - {fileID: 1396502046}
   - {fileID: 1016302924}
   - {fileID: 1495864298}
@@ -2838,8 +2838,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2, y: 0.25}
+  m_DrawMode: 1
+  m_Size: {x: 4.5, y: 0.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2853,8 +2853,8 @@ Transform:
   m_GameObject: {fileID: 1693247084}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -11.879501, y: -2.6917794, z: 0}
-  m_LocalScale: {x: 1.2860998, y: 1, z: 1}
+  m_LocalPosition: {x: -4.375, y: -3.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1528036757}
@@ -3072,8 +3072,8 @@ Transform:
   m_GameObject: {fileID: 1992055238}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -11.792501, y: 2.8022206, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.25, y: 3.4, z: 0}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1528036757}
@@ -3304,7 +3304,7 @@ GameObject:
   - component: {fileID: 2139809964}
   - component: {fileID: 2139809963}
   m_Layer: 0
-  m_Name: TV_Table
+  m_Name: TV Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3378,7 +3378,7 @@ Transform:
   m_GameObject: {fileID: 2139809962}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -10.952501, y: 2.7722204, z: 0}
+  m_LocalPosition: {x: -3.5, y: 3.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
