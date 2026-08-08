@@ -81,7 +81,7 @@ public class ButtonMenuManager : MonoBehaviour
 
         // intro text
         answerText.text = "<align=center>What question gives this Answer?</align>\n" +
-            $"<align=center><font=\"Jersey10-Regular SDF\">{selectedAns}</font></align>" +
+            $"<align=center>{selectedAns}</align>" +
             "\n<align=center>Search around the room to find some clues</align>";
 
         // append questions to option butons 
