@@ -1,23 +1,21 @@
-using UnityEngine;
-using TMPro;
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
-using System.Threading;
 
-public class startScreen : MonoBehaviour
+public class ButtonMenuManager : MonoBehaviour
 {
-    public TMP_Text myText;
-    public Image spriteRenderer;
+    [SerializeField] GameObject buttonPanel; // parent object holding the 5 buttons
 
-    [SerializeField]
-    public string selectedAns;
-
-    public float delayBeforeFade = 1f;
-    public float fadeDuration = 1.5f;
+    [SerializeField] TMP_Text answerText;
+    [SerializeField] Image panel;
+    [SerializeField] string selectedAns;
+    [SerializeField] float delayBeforeFade = 1f;
+    [SerializeField] float fadeDuration = 1.5f;
 
     [Header("Option Buttons")]
-    public List<Button> optionButtons = new List<Button>();
+    [SerializeField] Button[] optionButtons;
 
     private Dictionary<string, List<string>> questionBank = new Dictionary<string, List<string>>
     {
@@ -58,38 +56,37 @@ public class startScreen : MonoBehaviour
         }},
     };
 
-    // used on first call 
-    void Start()
+    void Awake()
     {
-        Begin();
+        RunAnswerSetup();
     }
 
-    public void RunAnswerSetup()
+    public void DelayAnswerSetup()
     {
         // waits 2 seconds and restarts the program with new answers + questions
-        Invoke(nameof(Begin), 2f);
+        Invoke(nameof(RunAnswerSetup), 2f);
     }
-    // public so can be called from button OnClick
-    public void Begin()
+
+    void RunAnswerSetup()
     {
         // reset visuals -> element visuals, color, transparecy
-        myText.gameObject.SetActive(true);
-        spriteRenderer.gameObject.SetActive(true);
-        myText.color = new Color(myText.color.r, myText.color.g, myText.color.b, 1f);
-        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+        answerText.gameObject.SetActive(true);
+        panel.gameObject.SetActive(true);
+        answerText.color = new Color(answerText.color.r, answerText.color.g, answerText.color.b, 1f);
+        panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, 1f);
 
-        List<string> answers = new List<string>(questionBank.Keys);
-        int randomIndex = UnityEngine.Random.Range(0, answers.Count);
+        List<string> answers = new(questionBank.Keys);
+        int randomIndex = Random.Range(0, answers.Count);
         selectedAns = answers[randomIndex];
 
         // intro text
-        myText.text = "<align=center>What question gives this Answer?</align>\n" +
+        answerText.text = "<align=center>What question gives this Answer?</align>\n" +
             $"<align=center><font=\"Jersey10-Regular SDF\">{selectedAns}</font></align>" +
             "\n<align=center>Search around the room to find some clues</align>";
 
         // append questions to option butons 
         List<string> questions = questionBank[selectedAns];
-        for (int i = 0; i < optionButtons.Count; i++)
+        for (int i = 0; i < optionButtons.Length; i++)
         {
             if (i < questions.Count)
             {
@@ -108,21 +105,26 @@ public class startScreen : MonoBehaviour
         yield return new WaitForSeconds(delayBeforeFade);
 
         float elapsed = 0f;
-        Color textColor = myText.color;
-        Color squareColor = spriteRenderer.color;
+        Color textColor = answerText.color;
+        Color squareColor = panel.color;
 
         while (elapsed < fadeDuration)
         {
             elapsed += Time.deltaTime;
             float alpha = Mathf.Lerp(1f, 0f, elapsed / fadeDuration);
-            myText.color = new Color(textColor.r, textColor.g, textColor.b, alpha);
-            spriteRenderer.color = new Color(squareColor.r, squareColor.g, squareColor.b, alpha);
+            answerText.color = new Color(textColor.r, textColor.g, textColor.b, alpha);
+            panel.color = new Color(squareColor.r, squareColor.g, squareColor.b, alpha);
             yield return null;
         }
 
-        myText.color = new Color(textColor.r, textColor.g, textColor.b, 0f);
-        spriteRenderer.color = new Color(squareColor.r, squareColor.g, squareColor.b, 0f);
-        myText.gameObject.SetActive(false);
-        spriteRenderer.gameObject.SetActive(false);
+        answerText.color = new Color(textColor.r, textColor.g, textColor.b, 0f);
+        panel.color = new Color(squareColor.r, squareColor.g, squareColor.b, 0f);
+        answerText.gameObject.SetActive(false);
+        panel.gameObject.SetActive(false);
+    }
+
+    public void ToggleMenu()
+    {
+        buttonPanel.SetActive(!buttonPanel.activeSelf);
     }
 }
