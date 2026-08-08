@@ -11,6 +11,7 @@
   <Project Path="Unity.Mathematics.csproj" />
   <Project Path="Unity.Timeline.Editor.csproj" />
   <Project Path="Unity.Multiplayer.Center.Editor.csproj" />
+  <Project Path="Unity.Cinemachine.Editor.csproj" />
   <Project Path="Unity.RenderPipelines.Core.Editor.csproj" />
   <Project Path="Unity.2D.Psdimporter.Editor.csproj" />
   <Project Path="UnityEngine.UI.csproj" />
@@ -24,6 +25,7 @@
   <Project Path="Unity.PerformanceTesting.Editor.csproj" />
   <Project Path="Unity.AI.Assistant.UI.Editor.csproj" />
   <Project Path="UnityEngine.TestRunner.csproj" />
+  <Project Path="Unity.Splines.csproj" />
   <Project Path="Unity.AI.Toolkit.Utility.csproj" />
   <Project Path="Unity.AppUI.Redux.csproj" />
   <Project Path="Unity.AI.MCP.Editor.csproj" />
@@ -53,7 +55,9 @@
   <Project Path="Unity.AI.Pbr.csproj" />
   <Project Path="Unity.AI.Generators.Sdk.csproj" />
   <Project Path="Unity.Burst.CodeGen.csproj" />
+  <Project Path="Unity.Cinemachine.csproj" />
   <Project Path="Unity.VisualScripting.Flow.csproj" />
+  <Project Path="Unity.Splines.Editor.csproj" />
   <Project Path="Unity.AI.Toolkit.Accounts.csproj" />
   <Project Path="Unity.PerformanceTesting.csproj" />
   <Project Path="Unity.AI.ModelSelector.csproj" />
@@ -105,6 +109,7 @@
   <Project Path="Unity.AI.Assistant.Annotations.Editor.csproj" />
   <Project Path="Unity.AppUI.Editor.csproj" />
   <Project Path="Unity.AI.MCP.Runtime.csproj" />
+  <Project Path="Unity.Settings.Editor.csproj" />
   <Project Path="Unity.InputSystem.TestFramework.csproj" />
   <Project Path="Unity.ShaderGraph.Utilities.csproj" />
   <Project Path="Unity.AI.Generators.Tools.csproj" />
@@ -118,6 +123,7 @@
   <Project Path="Unity.RenderPipeline.Universal.ShaderLibrary.csproj" />
   <Project Path="Unity.AI.Assistant.Bridge.Editor.csproj" />
   <Project Path="Unity.AI.Toolkit.Compliance.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Unity.InputSystem.DocCodeSamples.csproj" />
   <Project Path="Unity.RenderPipelines.Universal.Shaders.csproj" />
   <Project Path="Unity.RenderPipelines.Core.Runtime.Shared.csproj" />
