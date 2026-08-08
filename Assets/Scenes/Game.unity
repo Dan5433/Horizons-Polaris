@@ -1427,7 +1427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Toggle Question Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2048,7 +2048,7 @@ MonoBehaviour:
   answerText: {fileID: 147972515}
   panel: {fileID: 638494553}
   selectedAns: 
-  delayBeforeFade: 1
+  delayBeforeFade: 3
   fadeDuration: 1.5
   optionButtons:
   - {fileID: 1164870288}

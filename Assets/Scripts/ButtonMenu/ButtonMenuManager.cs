@@ -11,7 +11,7 @@ public class ButtonMenuManager : MonoBehaviour
     [SerializeField] TMP_Text answerText;
     [SerializeField] Image panel;
     [SerializeField] string selectedAns;
-    [SerializeField] float delayBeforeFade = 1f;
+    [SerializeField] float delayBeforeFade = 2f;
     [SerializeField] float fadeDuration = 1.5f;
 
     [Header("Option Buttons")]
@@ -33,7 +33,7 @@ public class ButtonMenuManager : MonoBehaviour
             "What is made with flour, sugar, eggs, fat, and other ingredients?",
             "What food are candles put on?"
         }},
-        { "A Blåhaj", new List<string>{
+        { "A Blahaj", new List<string>{
             "What is basically a shark?",
             "What can only be bought at Ikea?",
             "What has a heart and soul?",
