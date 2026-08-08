@@ -46,4 +46,15 @@ public class FileManager : Singleton<FileManager>
             CloneDirectory(directory, copyDestination);
         }
     }
+
+    public static void CloneClue(string assetPath, string roomDestinationPath)
+    {
+        string fileExtension = Path.GetExtension(assetPath);
+        int number = Random.Range(1, 1000);
+        string fileName = $"+clue{number}{fileExtension}";
+
+        string sourcePath = Path.Combine(Application.streamingAssetsPath, ClueManager.clueAssetDirectory, assetPath);
+        string destinationPath = Path.Combine(RoomDirectoryPath, roomDestinationPath, fileName);
+        File.Copy(sourcePath, destinationPath, overwrite: true);
+    }
 }
