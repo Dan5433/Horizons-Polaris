@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClueSO
   fileCluePath:
   - Real
-  - furry.png
+  - clue.txt
   clueDestinationPath:
   - center
   - sofa1

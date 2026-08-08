@@ -226,6 +226,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &309802637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 309802639}
+  - component: {fileID: 309802640}
+  m_Layer: 0
+  m_Name: Clue Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &309802639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309802637}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &309802640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309802637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ebfaff6315fc34782d476c031aebe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueManager
+  redHerrings:
+  - {fileID: 11400000, guid: 84131eabab18cc3408a44f854a375cc4, type: 2}
+  clueObjects: []
 --- !u!1 &392309941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1145,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 234183126}
   - {fileID: 47803809}
+  - {fileID: 309802639}
   - {fileID: 1533709169}
   - {fileID: 519420032}
   - {fileID: 1650341944}
