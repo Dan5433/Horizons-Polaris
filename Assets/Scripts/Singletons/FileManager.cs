@@ -7,8 +7,9 @@ public class FileManager : Singleton<FileManager>
 
     [SerializeField] string roomDirectoryName;
 
-    void Start()
+    protected override void Awake()
     {
+        base.Awake();
         CloneEmptyRoom();
     }
 

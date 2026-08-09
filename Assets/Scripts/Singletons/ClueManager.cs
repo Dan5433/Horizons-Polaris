@@ -16,6 +16,9 @@ public class ClueManager : Singleton<ClueManager>
     [Button(buttonHeight: 36)]
     public void RevealClues(string selectedAnswer)
     {
+        DestroyGameworldClues();
+
+
         ClueObject[] revealObjects = clueObjects.FirstOrDefault(obj => obj.matchingAnswer == selectedAnswer).clueObjects;
         if (revealObjects == null)
             return;
@@ -30,6 +33,19 @@ public class ClueManager : Singleton<ClueManager>
 
             reveal.RevealClueGroup(selectedAnswer, clueAmount, falseClueAmount);
             fullSet.Remove(reveal);
+        }
+    }
+
+    void DestroyGameworldClues()
+    {
+        foreach (ClueObject clue in clueObjects.SelectMany(obj => obj.clueObjects))
+        {
+            for (int i = clue.transform.childCount - 1; i >= 0; i--)
+            {
+                // Get the child object and destroy it
+                GameObject child = clue.transform.GetChild(i).gameObject;
+                Destroy(child);
+            }
         }
     }
 
