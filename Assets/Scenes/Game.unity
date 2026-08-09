@@ -12680,6 +12680,8 @@ MonoBehaviour:
   - table 1
   questionClues:
   - {fileID: 11400000, guid: 2517606988a09cf49af7b18ced82ece6, type: 2}
+  clueGroupMatching:
+  - Cake
 --- !u!1 &401061951
 GameObject:
   m_ObjectHideFlags: 0
@@ -13862,14 +13864,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1
-    height: 1
+    y: 0.055555556
+    width: 0.33333334
+    height: 0.3333333
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.821429
+  orthographic size: 5.625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -14979,6 +14981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b243a1cc69b74df1877ac92452d3d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonMenuManager
+  clueManager: {fileID: 740005290}
   buttonPanel: {fileID: 1202878741}
   answerText: {fileID: 147972515}
   panel: {fileID: 638494553}
@@ -15649,7 +15652,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69ebfaff6315fc34782d476c031aebe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClueManager
-  clueObjects: []
+  clueObjects:
+  - matchingAnswer: Cake
+    clueObjects:
+    - {fileID: 1891040472}
+    - {fileID: 1523422235}
+    - {fileID: 2059707608}
+    - {fileID: 400219617}
+    - {fileID: 963633661}
+    - {fileID: 986897002}
+  clueAmount: 2
+  falseClueAmount: 2
+  clueObjectRevealFraction: 1
 --- !u!1 &746203495
 GameObject:
   m_ObjectHideFlags: 0
@@ -17185,6 +17199,8 @@ MonoBehaviour:
   - table 3
   questionClues:
   - {fileID: 11400000, guid: 9177b5639c7e41a4bb7c31132e8affda, type: 2}
+  clueGroupMatching:
+  - Cake
 --- !u!212 &963633662
 SpriteRenderer:
   serializedVersion: 2
@@ -17492,6 +17508,8 @@ MonoBehaviour:
   - whiteboard
   questionClues:
   - {fileID: 11400000, guid: 6a65fbef2eb0015478c1868afd71e513, type: 2}
+  clueGroupMatching:
+  - Cake
 --- !u!1 &991374945
 GameObject:
   m_ObjectHideFlags: 0
@@ -23089,6 +23107,8 @@ MonoBehaviour:
   - computer desk
   questionClues:
   - {fileID: 11400000, guid: 9c01969b13b4cbb498a1b735fa716f28, type: 2}
+  clueGroupMatching:
+  - Cake
 --- !u!1 &1532977843
 GameObject:
   m_ObjectHideFlags: 0
@@ -26267,6 +26287,8 @@ MonoBehaviour:
   - big sofa
   questionClues:
   - {fileID: 11400000, guid: 020c069356c8a2542926424d7282ed80, type: 2}
+  clueGroupMatching:
+  - Cake
 --- !u!1 &1904407293
 GameObject:
   m_ObjectHideFlags: 0
@@ -28005,6 +28027,8 @@ MonoBehaviour:
   - workspace
   questionClues:
   - {fileID: 11400000, guid: 94db3f95f01d1b44f8d2fb0be72a5e90, type: 2}
+  clueGroupMatching:
+  - Cake
 --- !u!1 &2065864711
 GameObject:
   m_ObjectHideFlags: 0
