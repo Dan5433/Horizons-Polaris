@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ButtonMenuManager : MonoBehaviour
 {
+    [SerializeField] ClueManager clueManager;
     [SerializeField] GameObject buttonPanel; // parent object holding the 5 buttons
 
     [SerializeField] TMP_Text answerText;
@@ -116,7 +117,7 @@ public class ButtonMenuManager : MonoBehaviour
         for (int i = 0; i < optionButtons.Length; i++)
         {
             Button button = optionButtons[i];
-            button.GetComponent<Image>().color = Color.white; 
+            button.GetComponent<Image>().color = Color.white;
             if (i < questions.Count)
             {
                 TMP_Text buttonText = optionButtons[i].GetComponentInChildren<TMP_Text>();
@@ -124,6 +125,8 @@ public class ButtonMenuManager : MonoBehaviour
                     buttonText.text = questions[i];
             }
         }
+
+        clueManager.RevealClues(selectedAns);
 
         StopAllCoroutines(); // prevents overlapping fades if triggered again mid-fade
         StartCoroutine(FadeTextAfterDelay());

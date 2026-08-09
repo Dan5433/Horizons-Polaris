@@ -13864,14 +13864,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1
-    height: 1
+    y: 0.055555556
+    width: 0.33333334
+    height: 0.3333333
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.821429
+  orthographic size: 5.625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -14981,6 +14981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b243a1cc69b74df1877ac92452d3d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonMenuManager
+  clueManager: {fileID: 740005290}
   buttonPanel: {fileID: 1202878741}
   answerText: {fileID: 147972515}
   panel: {fileID: 638494553}

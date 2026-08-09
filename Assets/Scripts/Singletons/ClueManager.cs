@@ -17,7 +17,7 @@ public class ClueManager : Singleton<ClueManager>
     public void RevealClues(string selectedAnswer)
     {
         ClueObject[] revealObjects = clueObjects.FirstOrDefault(obj => obj.matchingAnswer == selectedAnswer).clueObjects;
-        if (revealObjects.Length == 0)
+        if (revealObjects == null)
             return;
 
         int amountToReveal = (int)(revealObjects.Length * clueObjectRevealFraction);
