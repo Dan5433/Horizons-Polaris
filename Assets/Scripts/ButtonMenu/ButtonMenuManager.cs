@@ -84,7 +84,7 @@ public class ButtonMenuManager : MonoBehaviour
         }},
     };
 
-    void Awake()
+    void Start()
     {
         RunAnswerSetup();
     }
