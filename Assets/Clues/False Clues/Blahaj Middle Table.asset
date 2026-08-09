@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b745ea843e501247a548647d2461006, type: 3}
-  m_Name: cake group
-  m_EditorClassIdentifier: Assembly-CSharp::ClueGroup
-  clues:
-  - {fileID: 11400000, guid: 750d10f79a225774e9f8243d4a92af21, type: 2}
-  falseClues: []
+  m_Script: {fileID: 11500000, guid: cfc82d9e19bbd3e4d9a0a298742ee77a, type: 3}
+  m_Name: Blahaj Middle Table
+  m_EditorClassIdentifier: Assembly-CSharp::FalseClueSO
+  fileCluePath:
+  - Real
+  - Shark
+  - clue4_shark.txt

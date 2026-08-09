@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7904b13a06fe0240a3309c3c8f62ff5, type: 3}
-  m_Name: Test
+  m_Name: Blahaj Right Table 2
   m_EditorClassIdentifier: Assembly-CSharp::ClueSO
   fileCluePath:
-  - False
-  - clue5_cake.txt
-  gameworldCluePrefab: {fileID: 2354413820359263589, guid: 052825b1921edda49a166ac0f1559dc5, type: 3}
+  - Real
+  - Shark
+  - clue9_shark.txt
+  gameworldCluePrefab: {fileID: 1727658547715622614, guid: 41d07a1a7e786eb489e9c1b4f3ca14e4, type: 3}
