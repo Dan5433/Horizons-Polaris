@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7904b13a06fe0240a3309c3c8f62ff5, type: 3}
+  m_Name: Music Left Bottom Table 3
+  m_EditorClassIdentifier: Assembly-CSharp::ClueSO
+  fileCluePath:
+  - Real
+  - Stars
+  - clue1_stars.txt
+  gameworldCluePrefab: {fileID: 1048856165146943935, guid: 6ab97f28315c9be4c9b992abf5cad958, type: 3}
