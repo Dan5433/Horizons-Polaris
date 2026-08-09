@@ -32,7 +32,7 @@ public class FileManager : Singleton<FileManager>
         foreach (string file in Directory.GetFiles(sourcePath))
         {
             string fileName = Path.GetFileName(file);
-            if (fileName.EndsWith(".meta"))
+            if (fileName.EndsWith(".meta") || fileName.StartsWith('.'))
                 continue;
 
             string copyDestination = Path.Combine(destinationPath, fileName);
