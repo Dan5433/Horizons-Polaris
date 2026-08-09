@@ -20,7 +20,7 @@ public class FileManager : Singleton<FileManager>
         CloneDirectory(emptyRoomStreamingPath, emptyRoomCopyPath);
     }
 
-    void CloneDirectory(string sourcePath, string destinationPath)
+    static void CloneDirectory(string sourcePath, string destinationPath)
     {
         if (!Directory.Exists(sourcePath))
         {
@@ -59,8 +59,19 @@ public class FileManager : Singleton<FileManager>
         File.Copy(sourcePath, destinationPath, overwrite: true);
     }
 
-    void OnApplicationQuit()
+    public static void ResetRoomDirectory()
+    {
+        DeleteRoomDirectory();
+        Instance.CloneEmptyRoom();
+    }
+
+    static void DeleteRoomDirectory()
     {
         Directory.Delete(RoomDirectoryPath, recursive: true);
+    }
+
+    void OnApplicationQuit()
+    {
+        DeleteRoomDirectory();
     }
 }

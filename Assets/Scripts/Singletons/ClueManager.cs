@@ -17,6 +17,7 @@ public class ClueManager : Singleton<ClueManager>
     public void RevealClues(string selectedAnswer)
     {
         DestroyGameworldClues();
+        FileManager.ResetRoomDirectory();
 
 
         ClueObject[] revealObjects = clueObjects.FirstOrDefault(obj => obj.matchingAnswer == selectedAnswer).clueObjects;
