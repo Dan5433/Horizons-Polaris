@@ -35,13 +35,12 @@ public class ClueObject : MonoBehaviour
             FileManager.CloneClue(clue.FileCluePath, Path.Combine(clueDestinationPath));
         }
 
-        HashSet<FalseClueSO> falseClueSet = selectedGroup.FalseClues.ToHashSet();
+        FalseClueSO[] falseClueSet = selectedGroup.FalseClues;
 
         iterations = Mathf.Min(fakeAmount, selectedGroup.FalseClues.Length);
         for (int i = 0; i < iterations; i++)
         {
-            int index = Random.Range(0, falseClueSet.Count);
-            FalseClueSO clue = falseClueSet.ElementAt(index);
+            FalseClueSO clue = falseClueSet[Random.Range(0, falseClueSet.Length)];
             FileManager.CloneClue(clue.FileCluePath, Path.Combine(clueDestinationPath));
         }
     }
