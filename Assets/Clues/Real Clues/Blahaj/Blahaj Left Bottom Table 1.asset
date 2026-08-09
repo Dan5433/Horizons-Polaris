@@ -15,5 +15,5 @@ MonoBehaviour:
   fileCluePath:
   - Real
   - Shark
-  - clue7_shark.png
+  - clue7_shark (mirror).png
   gameworldCluePrefab: {fileID: 7514790661924428028, guid: d94bc517730ba254895be07ffb31808d, type: 3}
