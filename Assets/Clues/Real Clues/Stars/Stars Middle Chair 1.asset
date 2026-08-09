@@ -15,5 +15,5 @@ MonoBehaviour:
   fileCluePath:
   - Real
   - Stars
-  - clue4_stars.png
+  - clue3_stars.png
   gameworldCluePrefab: {fileID: 1885187978980951138, guid: 5d3a48c78c10abb43a59a2b5fa3bb30e, type: 3}
