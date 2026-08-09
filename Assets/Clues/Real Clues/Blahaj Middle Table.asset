@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7904b13a06fe0240a3309c3c8f62ff5, type: 3}
-  m_Name: Clue 1
+  m_Name: Blahaj Middle Table
   m_EditorClassIdentifier: Assembly-CSharp::ClueSO
   fileCluePath:
   - Real
-  - clue1_cake.txt
-  gameworldCluePrefab: {fileID: 3045148408319587800, guid: 30301eea6fbe3401093cf2a2d2b047c5, type: 3}
+  - shark
+  - clue2_shark.txt
+  gameworldCluePrefab: {fileID: 9097705989289753221, guid: 92523e0591402ae44b586545f356b861, type: 3}

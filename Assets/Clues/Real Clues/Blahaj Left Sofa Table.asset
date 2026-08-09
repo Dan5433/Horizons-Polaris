@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7904b13a06fe0240a3309c3c8f62ff5, type: 3}
-  m_Name: Cake Clue Middle Table
+  m_Name: Blahaj Left Sofa Table
   m_EditorClassIdentifier: Assembly-CSharp::ClueSO
   fileCluePath:
   - Real
-  - clue.txt
-  gameworldCluePrefab: {fileID: 4544007793580304376, guid: b218449ef7fcc6d4393b12304f1a143f, type: 3}
+  - Shark
+  - clue1_shark.txt
+  gameworldCluePrefab: {fileID: 7870516725743596558, guid: c226b30e47282664487a55f7fb933444, type: 3}
