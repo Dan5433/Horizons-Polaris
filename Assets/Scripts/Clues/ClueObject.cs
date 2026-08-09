@@ -29,6 +29,7 @@ public class ClueObject : MonoBehaviour
         {
             int index = Random.Range(0, clueSet.Count);
             ClueSO clue = clueSet.ElementAt(index);
+            clueSet.Remove(clue);
 
             Instantiate(clue.GameworldCluePrefab, transform);
             FileManager.CloneClue(clue.FileCluePath, Path.Combine(clueDestinationPath));
