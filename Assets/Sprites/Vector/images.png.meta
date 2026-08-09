@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0ae7b732cd9b7451aabde0f5e99c7334
+guid: 1117fc0da927148c8a2a58dffc908059
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6747174508410020200
-    second: quarter_0
+      213: 8957324059118975939
+    second: images_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: quarter_0
+      name: images_0
       rect:
         serializedVersion: 2
-        x: 80
-        y: 18
-        width: 110
-        height: 260
+        x: 0
+        y: 82
+        width: 360
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89e56ac58883d52a0800000000000000
-      internalID: -6747174508410020200
+      spriteID: 3cbb8d916cece4c70800000000000000
+      internalID: 8957324059118975939
       vertices: []
       indices: 
       edges: []
