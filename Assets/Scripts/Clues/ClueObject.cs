@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ClueObject : MonoBehaviour
 {
@@ -10,17 +11,20 @@ public class ClueObject : MonoBehaviour
     [SerializeField] string[] clueDestinationPath;
 
     [SerializeField] ClueGroup[] questionClues;
+    [SerializeField] string[] clueGroupMatching;
     ClueGroup selectedGroup;
 
     [Button(buttonHeight: 36)]
-    public void MakeDifferent(int answerIndex)
+    public void RevealClueGroup(string answer, int clueAmount, int fakeClueAmount)
     {
+        int answerIndex = System.Array.IndexOf(clueGroupMatching, answer);
         selectedGroup = questionClues[answerIndex];
-        //RevealClues();
+
+        RevealClues(clueAmount, fakeClueAmount);
     }
 
     [Button(buttonHeight: 36)]
-    public void RevealClues(int amount, int fakeAmount)
+    void RevealClues(int amount, int fakeAmount)
     {
         HashSet<ClueSO> clueSet = selectedGroup.Clues.ToHashSet();
 

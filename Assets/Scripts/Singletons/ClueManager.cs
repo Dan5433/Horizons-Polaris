@@ -1,15 +1,42 @@
+using EditorAttributes;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ClueManager : Singleton<ClueManager>
 {
     public static readonly string clueAssetDirectory = "Clues";
 
-    [Tooltip("Have to be generic to work with all clue objects")]
-    [SerializeField] ClueObject[] clueObjects;
+    [SerializeField] ClueObjectsMatch[] clueObjects;
+    [SerializeField] int clueAmount, falseClueAmount;
+    [SerializeField][Range(0, 1)] float clueObjectRevealFraction = 1;
 
-    protected override void Awake()
+    [Button(buttonHeight: 36)]
+    public void RevealClues(string selectedAnswer)
     {
-        base.Awake();
-        //choose answer index and set clue objects selected group to respective index
+        ClueObject[] revealObjects = clueObjects.FirstOrDefault(obj => obj.matchingAnswer == selectedAnswer).clueObjects;
+        if (revealObjects.Length == 0)
+            return;
+
+        int amountToReveal = (int)(revealObjects.Length * clueObjectRevealFraction);
+        HashSet<ClueObject> fullSet = revealObjects.ToHashSet();
+
+        for (int i = 0; i < amountToReveal; i++)
+        {
+            int randomIndex = Random.Range(0, fullSet.Count);
+            ClueObject reveal = fullSet.ElementAt(randomIndex);
+
+            reveal.RevealClueGroup(selectedAnswer, clueAmount, falseClueAmount);
+            fullSet.Remove(reveal);
+        }
+    }
+
+    [Serializable]
+    struct ClueObjectsMatch
+    {
+        public string matchingAnswer;
+        public ClueObject[] clueObjects;
     }
 }
