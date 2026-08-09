@@ -15506,6 +15506,7 @@ GameObject:
   - component: {fileID: 723950268}
   - component: {fileID: 723950270}
   - component: {fileID: 723950269}
+  - component: {fileID: 723950271}
   m_Layer: 0
   m_Name: Table 3
   m_TagString: Untagged
@@ -15633,6 +15634,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &723950271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723950267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - left
+  - bottom
+  - table 3
+  questionClues:
+  - {fileID: 11400000, guid: 8cd628f9ac1fc8146be9160420fe45f9, type: 2}
 --- !u!1 &740005288
 GameObject:
   m_ObjectHideFlags: 0
@@ -21808,6 +21827,7 @@ GameObject:
   - component: {fileID: 1413820853}
   - component: {fileID: 1413820855}
   - component: {fileID: 1413820854}
+  - component: {fileID: 1413820856}
   m_Layer: 0
   m_Name: Sofa
   m_TagString: Untagged
@@ -21935,6 +21955,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1413820856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413820852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - left
+  - top
+  - sofa
+  questionClues:
+  - {fileID: 11400000, guid: b137797544e046a41bedfa225c2595f0, type: 2}
 --- !u!1 &1423462868
 GameObject:
   m_ObjectHideFlags: 0
@@ -22724,6 +22762,7 @@ GameObject:
   - component: {fileID: 1523422232}
   - component: {fileID: 1523422234}
   - component: {fileID: 1523422233}
+  - component: {fileID: 1523422235}
   m_Layer: 2
   m_Name: Computer Desk
   m_TagString: Untagged
@@ -22851,6 +22890,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1523422235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523422231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - middle
+  - computer desk
+  questionClues:
+  - {fileID: 11400000, guid: c145d53bd5a776348816f50085c61b22, type: 2}
 --- !u!1 &1532977843
 GameObject:
   m_ObjectHideFlags: 0
@@ -23213,7 +23269,6 @@ GameObject:
   - component: {fileID: 1558062699}
   - component: {fileID: 1558062701}
   - component: {fileID: 1558062700}
-  - component: {fileID: 1558062702}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -23341,23 +23396,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &1558062702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558062698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
-  clueDestinationPath:
-  - middle
-  - table
-  questionClues:
-  - {fileID: 11400000, guid: 77202239aad77864ba7f241f1bc2351f, type: 2}
 --- !u!1 &1570677338
 GameObject:
   m_ObjectHideFlags: 0
@@ -24874,6 +24912,7 @@ GameObject:
   - component: {fileID: 1787128322}
   - component: {fileID: 1787128324}
   - component: {fileID: 1787128323}
+  - component: {fileID: 1787128325}
   m_Layer: 0
   m_Name: Comfy Chair 1
   m_TagString: Untagged
@@ -25001,6 +25040,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1787128325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787128321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - middle
+  - comfy chair 1
+  questionClues:
+  - {fileID: 11400000, guid: ea5b91b41999af54eb7174c7b0c9d15d, type: 2}
 --- !u!1 &1787716839
 GameObject:
   m_ObjectHideFlags: 0
@@ -28040,6 +28096,7 @@ GameObject:
   - component: {fileID: 2135987607}
   - component: {fileID: 2135987609}
   - component: {fileID: 2135987608}
+  - component: {fileID: 2135987610}
   m_Layer: 0
   m_Name: Bar Table
   m_TagString: Untagged
@@ -28167,6 +28224,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2135987610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135987606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - right
+  - work area
+  - bar table
+  questionClues:
+  - {fileID: 11400000, guid: 5c92ff198eb3dc34087ba59a9ad4235f, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
