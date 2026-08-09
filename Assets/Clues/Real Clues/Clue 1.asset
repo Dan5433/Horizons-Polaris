@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7904b13a06fe0240a3309c3c8f62ff5, type: 3}
   m_Name: Clue 1
   m_EditorClassIdentifier: Assembly-CSharp::ClueSO
-  fileCluePath: []
-  gameworldCluePrefab: {fileID: 0}
+  fileCluePath:
+  - Real
+  - clue.txt
+  gameworldCluePrefab: {fileID: 3045148408319587800, guid: 30301eea6fbe3401093cf2a2d2b047c5, type: 3}

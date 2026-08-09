@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b745ea843e501247a548647d2461006, type: 3}
   m_Name: Cake Clues
   m_EditorClassIdentifier: Assembly-CSharp::ClueGroup
-  clues: []
+  clues:
+  - {fileID: 11400000, guid: c636531f2cefe42ee86301fca186bd84, type: 2}
   falseClues: []
