@@ -1,0 +1,15 @@
+{
+  "foldouts": {
+    "-38938_Sofa Table (ClueObject)_MakeDifferent_Int32": true,
+    "-38938_Sofa Table (ClueObject)_RevealClues_Int32_Int32": true
+  },
+  "parameterValues": {
+    "-38938_Sofa Table (ClueObject)_MakeDifferent_Int32": [
+      null
+    ],
+    "-38938_Sofa Table (ClueObject)_RevealClues_Int32_Int32": [
+      1,
+      null
+    ]
+  }
+}

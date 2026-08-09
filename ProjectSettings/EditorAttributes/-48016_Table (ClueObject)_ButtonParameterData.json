@@ -1,0 +1,15 @@
+{
+  "foldouts": {
+    "-48016_Table (ClueObject)_MakeDifferent_Int32": true,
+    "-48016_Table (ClueObject)_RevealClues_Int32_Int32": true
+  },
+  "parameterValues": {
+    "-48016_Table (ClueObject)_MakeDifferent_Int32": [
+      null
+    ],
+    "-48016_Table (ClueObject)_RevealClues_Int32_Int32": [
+      1,
+      1
+    ]
+  }
+}
