@@ -1,0 +1,15 @@
+{
+  "foldouts": {
+    "239922_Whiteboard  (ClueObject)_MakeDifferent_Int32": true,
+    "239922_Whiteboard  (ClueObject)_RevealClues_Int32_Int32": true
+  },
+  "parameterValues": {
+    "239922_Whiteboard  (ClueObject)_MakeDifferent_Int32": [
+      null
+    ],
+    "239922_Whiteboard  (ClueObject)_RevealClues_Int32_Int32": [
+      4,
+      4
+    ]
+  }
+}

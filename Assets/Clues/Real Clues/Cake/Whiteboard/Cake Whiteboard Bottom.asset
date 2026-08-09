@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7904b13a06fe0240a3309c3c8f62ff5, type: 3}
-  m_Name: Test
+  m_Name: Cake Whiteboard Bottom
   m_EditorClassIdentifier: Assembly-CSharp::ClueSO
   fileCluePath:
-  - False
-  - clue5_cake.txt
-  gameworldCluePrefab: {fileID: 2354413820359263589, guid: 052825b1921edda49a166ac0f1559dc5, type: 3}
+  - Real
+  - Cake
+  - clue4_cake.avif
+  gameworldCluePrefab: {fileID: 6712141237597452661, guid: e9efa845472972440bf8cfd2a4704b9c, type: 3}
