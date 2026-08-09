@@ -1,0 +1,15 @@
+{
+  "foldouts": {
+    "-104266_Bar Table (ClueObject)_MakeDifferent_Int32": true,
+    "-104266_Bar Table (ClueObject)_RevealClues_Int32_Int32": true
+  },
+  "parameterValues": {
+    "-104266_Bar Table (ClueObject)_MakeDifferent_Int32": [
+      null
+    ],
+    "-104266_Bar Table (ClueObject)_RevealClues_Int32_Int32": [
+      1,
+      null
+    ]
+  }
+}
