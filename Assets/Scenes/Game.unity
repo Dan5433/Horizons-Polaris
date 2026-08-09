@@ -12680,8 +12680,10 @@ MonoBehaviour:
   - table 1
   questionClues:
   - {fileID: 11400000, guid: 2517606988a09cf49af7b18ced82ece6, type: 2}
+  - {fileID: 11400000, guid: 7638ee9fbf17b4d46ba2b7d5b92f3fec, type: 2}
   clueGroupMatching:
   - Cake
+  - Horizon
 --- !u!1 &401061951
 GameObject:
   m_ObjectHideFlags: 0
@@ -13864,9 +13866,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.10526316
-    width: 0.58076227
-    height: 0.631579
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -15660,6 +15662,12 @@ MonoBehaviour:
     - {fileID: 2059707608}
     - {fileID: 400219617}
     - {fileID: 963633661}
+    - {fileID: 986897002}
+  - matchingAnswer: Horizon
+    clueObjects:
+    - {fileID: 1891040472}
+    - {fileID: 1787128325}
+    - {fileID: 400219617}
     - {fileID: 986897002}
   - matchingAnswer: Stars
     clueObjects:
@@ -17516,8 +17524,10 @@ MonoBehaviour:
   - whiteboard
   questionClues:
   - {fileID: 11400000, guid: 6a65fbef2eb0015478c1868afd71e513, type: 2}
+  - {fileID: 11400000, guid: 9019d32f4133a4ef3abe21cbcc4d399a, type: 2}
   clueGroupMatching:
   - Cake
+  - Horizon
 --- !u!1 &991374945
 GameObject:
   m_ObjectHideFlags: 0
@@ -22053,8 +22063,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1413820853}
   - component: {fileID: 1413820855}
-  - component: {fileID: 1413820854}
   - component: {fileID: 1413820856}
+  - component: {fileID: 1413820854}
   m_Layer: 0
   m_Name: Sofa
   m_TagString: Untagged
@@ -25289,8 +25299,10 @@ MonoBehaviour:
   - middle
   - comfy chair 1
   questionClues:
+  - {fileID: 11400000, guid: 1c32cc5b378904012a6dce347410074d, type: 2}
   - {fileID: 11400000, guid: ea5b91b41999af54eb7174c7b0c9d15d, type: 2}
   clueGroupMatching:
+  - Horizon
   - Stars
 --- !u!1 &1787716839
 GameObject:
@@ -26338,8 +26350,10 @@ MonoBehaviour:
   - big sofa
   questionClues:
   - {fileID: 11400000, guid: 020c069356c8a2542926424d7282ed80, type: 2}
+  - {fileID: 11400000, guid: 5f4059019d8834e44ac891f2d3439a65, type: 2}
   clueGroupMatching:
   - Cake
+  - Horizon
 --- !u!1 &1904407293
 GameObject:
   m_ObjectHideFlags: 0
