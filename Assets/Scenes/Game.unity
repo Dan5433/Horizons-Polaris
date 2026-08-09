@@ -12680,8 +12680,10 @@ MonoBehaviour:
   - table 1
   questionClues:
   - {fileID: 11400000, guid: 2517606988a09cf49af7b18ced82ece6, type: 2}
+  - {fileID: 11400000, guid: 6924d85706496428483607d9b937017b, type: 2}
   clueGroupMatching:
   - Cake
+  - Music
 --- !u!1 &401061951
 GameObject:
   m_ObjectHideFlags: 0
@@ -13864,14 +13866,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.055555556
-    width: 0.33333334
-    height: 0.3333333
+    y: 0.1417004
+    width: 2.0047874
+    height: 1.9072622
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5.625
+  orthographic size: 4.6875
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -13896,7 +13898,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2899911, y: -1, z: -10}
+  m_LocalPosition: {x: 0.29000124, y: -1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15661,6 +15663,20 @@ MonoBehaviour:
     - {fileID: 400219617}
     - {fileID: 963633661}
     - {fileID: 986897002}
+  - matchingAnswer: Music
+    clueObjects:
+    - {fileID: 963633661}
+    - {fileID: 1787128325}
+    - {fileID: 2059707608}
+    - {fileID: 1523422235}
+    - {fileID: 400219617}
+  - matchingAnswer: Blahaj
+    clueObjects:
+    - {fileID: 2020130996}
+    - {fileID: 2055834253}
+    - {fileID: 1146793974}
+    - {fileID: 1558062702}
+    - {fileID: 1999840920}
   clueAmount: 2
   falseClueAmount: 2
   clueObjectRevealFraction: 1
@@ -17199,8 +17215,10 @@ MonoBehaviour:
   - table 3
   questionClues:
   - {fileID: 11400000, guid: 9177b5639c7e41a4bb7c31132e8affda, type: 2}
+  - {fileID: 11400000, guid: d5aaafe82c7ee43f0ab36756da6d9ccd, type: 2}
   clueGroupMatching:
   - Cake
+  - Music
 --- !u!212 &963633662
 SpriteRenderer:
   serializedVersion: 2
@@ -18994,6 +19012,7 @@ GameObject:
   - component: {fileID: 1146793971}
   - component: {fileID: 1146793973}
   - component: {fileID: 1146793972}
+  - component: {fileID: 1146793974}
   m_Layer: 0
   m_Name: Table 2
   m_TagString: Untagged
@@ -19121,6 +19140,26 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1146793974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146793970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - left
+  - bottom
+  - table 2
+  questionClues:
+  - {fileID: 11400000, guid: 04fef9e330343ff43a5ae0789864001c, type: 2}
+  clueGroupMatching:
+  - Blahaj
 --- !u!1 &1164870286
 GameObject:
   m_ObjectHideFlags: 0
@@ -23107,8 +23146,10 @@ MonoBehaviour:
   - computer desk
   questionClues:
   - {fileID: 11400000, guid: 9c01969b13b4cbb498a1b735fa716f28, type: 2}
+  - {fileID: 11400000, guid: 2dd0bedd5fd3b44e9915c3e487ef422e, type: 2}
   clueGroupMatching:
   - Cake
+  - Music
 --- !u!1 &1532977843
 GameObject:
   m_ObjectHideFlags: 0
@@ -23242,6 +23283,7 @@ GameObject:
   - component: {fileID: 1537636489}
   - component: {fileID: 1537636491}
   - component: {fileID: 1537636490}
+  - component: {fileID: 1537636492}
   m_Layer: 0
   m_Name: Center Island
   m_TagString: Untagged
@@ -23369,6 +23411,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1537636492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537636488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath: []
+  questionClues:
+  - {fileID: 11400000, guid: 8c4066820720aca4c8bdf2a199666d87, type: 2}
+  clueGroupMatching: []
 --- !u!1 &1540962340
 GameObject:
   m_ObjectHideFlags: 0
@@ -23471,6 +23529,7 @@ GameObject:
   - component: {fileID: 1558062699}
   - component: {fileID: 1558062701}
   - component: {fileID: 1558062700}
+  - component: {fileID: 1558062702}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -23598,6 +23657,25 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1558062702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558062698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - middle
+  - table
+  questionClues:
+  - {fileID: 11400000, guid: 77202239aad77864ba7f241f1bc2351f, type: 2}
+  clueGroupMatching:
+  - Blahaj
 --- !u!1 &1570677338
 GameObject:
   m_ObjectHideFlags: 0
@@ -25114,6 +25192,7 @@ GameObject:
   - component: {fileID: 1787128322}
   - component: {fileID: 1787128324}
   - component: {fileID: 1787128323}
+  - component: {fileID: 1787128325}
   m_Layer: 0
   m_Name: Comfy Chair 1
   m_TagString: Untagged
@@ -25241,6 +25320,25 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1787128325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787128321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - middle
+  - comfy chair 1
+  questionClues:
+  - {fileID: 11400000, guid: a4ec1d14f32f2402ca0fe8adcea5c376, type: 2}
+  clueGroupMatching:
+  - Music
 --- !u!1 &1787716839
 GameObject:
   m_ObjectHideFlags: 0
@@ -27252,6 +27350,7 @@ GameObject:
   - component: {fileID: 1999840917}
   - component: {fileID: 1999840919}
   - component: {fileID: 1999840918}
+  - component: {fileID: 1999840920}
   m_Layer: 0
   m_Name: Table 2
   m_TagString: Untagged
@@ -27379,6 +27478,26 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1999840920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999840916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - right
+  - work area
+  - table 2
+  questionClues:
+  - {fileID: 11400000, guid: 8c4066820720aca4c8bdf2a199666d87, type: 2}
+  clueGroupMatching:
+  - Blahaj
 --- !u!1 &2020130992
 GameObject:
   m_ObjectHideFlags: 0
@@ -27390,6 +27509,7 @@ GameObject:
   - component: {fileID: 2020130993}
   - component: {fileID: 2020130995}
   - component: {fileID: 2020130994}
+  - component: {fileID: 2020130996}
   m_Layer: 0
   m_Name: Sofa Table
   m_TagString: Untagged
@@ -27517,6 +27637,26 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2020130996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020130992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - left
+  - top
+  - sofa table
+  questionClues:
+  - {fileID: 11400000, guid: 4c180ee83fdced2409e0f4246c8953cd, type: 2}
+  clueGroupMatching:
+  - Blahaj
 --- !u!1 &2036047747
 GameObject:
   m_ObjectHideFlags: 0
@@ -27743,6 +27883,7 @@ GameObject:
   - component: {fileID: 2055834250}
   - component: {fileID: 2055834252}
   - component: {fileID: 2055834251}
+  - component: {fileID: 2055834253}
   m_Layer: 0
   m_Name: Table 1
   m_TagString: Untagged
@@ -27870,6 +28011,26 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2055834253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055834249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - left
+  - bottom
+  - table 1
+  questionClues:
+  - {fileID: 11400000, guid: 4ab8a78efc033bd41b8bb19510b69a67, type: 2}
+  clueGroupMatching:
+  - Blahaj
 --- !u!1 &2059707604
 GameObject:
   m_ObjectHideFlags: 0
