@@ -11,6 +11,7 @@ public class ButtonMenuManager : MonoBehaviour
     [SerializeField] TMP_Text answerText;
     [SerializeField] Image panel;
     [SerializeField] string selectedAns;
+    public string SelectedAnswer => selectedAns; // public read-only access for other scripts
     [SerializeField] float delayBeforeFade = 2f;
     [SerializeField] float fadeDuration = 1.5f;
 
@@ -19,28 +20,28 @@ public class ButtonMenuManager : MonoBehaviour
 
     private Dictionary<string, List<string>> questionBank = new Dictionary<string, List<string>>
     {
-        { "The Horizon", new List<string>{
+        { "Horizon", new List<string>{
             "Where is a place where the earth touches the sky?",
             "What is the name of this Hackathon?",
             "What is the name of a famous disaster? Deepwater ____?",
             "What line can you see but never reach?",
             "Fill in the blank: _______ Polaris?"
         }},
-        { "A Cake", new List<string>{
+        { "Cake", new List<string>{
             "What are we eating at the party?",
             "What is the dog's favourite food?",
             "What has multiple layers?",
             "What is made with flour, sugar, eggs, fat, and other ingredients?",
             "What food are candles put on?"
         }},
-        { "A Blahaj", new List<string>{
+        { "Blahaj", new List<string>{
             "What is basically a shark?",
             "What can only be bought at Ikea?",
             "What has a heart and soul?",
             "What can be loved and lost?",
             "What can be bought for 4 approved hours on the Horizons shop?"
         }},
-        { "The Stars", new List<string>{
+        { "Stars", new List<string>{
             "What is the origin of the \"star\" shape?",
             "What is the sun an example of?",
             "What is seen when looking up on a clear day?",
