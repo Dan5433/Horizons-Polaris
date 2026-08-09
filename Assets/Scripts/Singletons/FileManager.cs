@@ -57,4 +57,9 @@ public class FileManager : Singleton<FileManager>
         string destinationPath = Path.Combine(RoomDirectoryPath, roomDestinationPath, fileName);
         File.Copy(sourcePath, destinationPath, overwrite: true);
     }
+
+    void OnApplicationQuit()
+    {
+        Directory.Delete(RoomDirectoryPath, recursive: true);
+    }
 }
