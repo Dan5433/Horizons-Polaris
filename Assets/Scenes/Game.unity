@@ -13864,9 +13864,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.055555556
-    width: 0.33333334
-    height: 0.3333333
+    y: 0.10526316
+    width: 0.58076227
+    height: 0.631579
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -15661,6 +15661,12 @@ MonoBehaviour:
     - {fileID: 400219617}
     - {fileID: 963633661}
     - {fileID: 986897002}
+  - matchingAnswer: Stars
+    clueObjects:
+    - {fileID: 963633661}
+    - {fileID: 1413820856}
+    - {fileID: 1787128325}
+    - {fileID: 1523422235}
   clueAmount: 2
   falseClueAmount: 2
   clueObjectRevealFraction: 1
@@ -17199,8 +17205,10 @@ MonoBehaviour:
   - table 3
   questionClues:
   - {fileID: 11400000, guid: 9177b5639c7e41a4bb7c31132e8affda, type: 2}
+  - {fileID: 11400000, guid: 8cd628f9ac1fc8146be9160420fe45f9, type: 2}
   clueGroupMatching:
   - Cake
+  - Stars
 --- !u!212 &963633662
 SpriteRenderer:
   serializedVersion: 2
@@ -22046,6 +22054,7 @@ GameObject:
   - component: {fileID: 1413820853}
   - component: {fileID: 1413820855}
   - component: {fileID: 1413820854}
+  - component: {fileID: 1413820856}
   m_Layer: 0
   m_Name: Sofa
   m_TagString: Untagged
@@ -22173,6 +22182,26 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1413820856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413820852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - left
+  - top
+  - sofa
+  questionClues:
+  - {fileID: 11400000, guid: b137797544e046a41bedfa225c2595f0, type: 2}
+  clueGroupMatching:
+  - Stars
 --- !u!1 &1423462868
 GameObject:
   m_ObjectHideFlags: 0
@@ -23107,8 +23136,10 @@ MonoBehaviour:
   - computer desk
   questionClues:
   - {fileID: 11400000, guid: 9c01969b13b4cbb498a1b735fa716f28, type: 2}
+  - {fileID: 11400000, guid: c145d53bd5a776348816f50085c61b22, type: 2}
   clueGroupMatching:
   - Cake
+  - Stars
 --- !u!1 &1532977843
 GameObject:
   m_ObjectHideFlags: 0
@@ -25114,6 +25145,7 @@ GameObject:
   - component: {fileID: 1787128322}
   - component: {fileID: 1787128324}
   - component: {fileID: 1787128323}
+  - component: {fileID: 1787128325}
   m_Layer: 0
   m_Name: Comfy Chair 1
   m_TagString: Untagged
@@ -25241,6 +25273,25 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1787128325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787128321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - middle
+  - comfy chair 1
+  questionClues:
+  - {fileID: 11400000, guid: ea5b91b41999af54eb7174c7b0c9d15d, type: 2}
+  clueGroupMatching:
+  - Stars
 --- !u!1 &1787716839
 GameObject:
   m_ObjectHideFlags: 0

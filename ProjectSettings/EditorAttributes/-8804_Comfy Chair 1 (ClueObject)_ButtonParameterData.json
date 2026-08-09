@@ -1,0 +1,17 @@
+{
+  "foldouts": {
+    "-8804_Comfy Chair 1 (ClueObject)_RevealClueGroup_String_Int32_Int32": true,
+    "-8804_Comfy Chair 1 (ClueObject)_RevealClues_Int32_Int32": true
+  },
+  "parameterValues": {
+    "-8804_Comfy Chair 1 (ClueObject)_RevealClueGroup_String_Int32_Int32": [
+      "Stars",
+      4,
+      4
+    ],
+    "-8804_Comfy Chair 1 (ClueObject)_RevealClues_Int32_Int32": [
+      null,
+      null
+    ]
+  }
+}
