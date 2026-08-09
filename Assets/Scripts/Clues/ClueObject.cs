@@ -24,23 +24,27 @@ public class ClueObject : MonoBehaviour
     {
         HashSet<ClueSO> clueSet = selectedGroup.Clues.ToHashSet();
 
-        int iterations = Mathf.Min(amount, selectedGroup.Clues.Length);
+        int iterations = Mathf.Min(amount, clueSet.Count);
         for (int i = 0; i < iterations; i++)
         {
             int index = Random.Range(0, clueSet.Count);
             ClueSO clue = clueSet.ElementAt(index);
+            clueSet.Remove(clue);
 
             Instantiate(clue.GameworldCluePrefab, transform);
             FileManager.CloneClue(clue.FileCluePath, Path.Combine(clueDestinationPath));
         }
 
-        HashSet<FalseClueSO> falseClueSet = selectedGroup.FalseClues.ToHashSet();
+        //allow double takes of false clues
+        List<FalseClueSO> falseClueSet = selectedGroup.FalseClues.ToList();
+        falseClueSet.AddRange(falseClueSet);
 
-        iterations = Mathf.Min(fakeAmount, selectedGroup.FalseClues.Length);
+        iterations = Mathf.Min(fakeAmount, falseClueSet.Count);
         for (int i = 0; i < iterations; i++)
         {
-            int index = Random.Range(0, falseClueSet.Count);
-            FalseClueSO clue = falseClueSet.ElementAt(index);
+            FalseClueSO clue = falseClueSet[Random.Range(0, falseClueSet.Count)];
+            falseClueSet.Remove(clue);
+
             FileManager.CloneClue(clue.FileCluePath, Path.Combine(clueDestinationPath));
         }
     }

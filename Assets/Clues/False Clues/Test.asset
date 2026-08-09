@@ -13,9 +13,6 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: Assembly-CSharp::ClueSO
   fileCluePath:
-  - Real
-  - clue.txt
-  clueDestinationPath:
-  - center
-  - sofa1
+  - False
+  - clue5_cake.txt
   gameworldCluePrefab: {fileID: 2354413820359263589, guid: 052825b1921edda49a166ac0f1559dc5, type: 3}
