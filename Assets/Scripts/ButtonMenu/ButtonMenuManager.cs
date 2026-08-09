@@ -12,11 +12,37 @@ public class ButtonMenuManager : MonoBehaviour
     [SerializeField] Image panel;
     [SerializeField] string selectedAns;
     public string SelectedAnswer => selectedAns; // public read-only access for other scripts
-    [SerializeField] float delayBeforeFade = 2f;
+    [SerializeField] float delayBeforeFade = 3f;
     [SerializeField] float fadeDuration = 1.5f;
 
     [Header("Option Buttons")]
     [SerializeField] Button[] optionButtons;
+
+    [Header("Answer Checking")]
+    [SerializeField] Color correctColor = Color.green;
+    [SerializeField] Color incorrectColor = Color.red;
+
+    private readonly HashSet<string> correctQuestions = new HashSet<string>
+    {
+        "What is the name of this Hackathon?",
+        "What is the dog's favourite food?",
+        "What has a heart and soul?",
+        "What symbol represents the great unknown?",
+        "What unites people all across the world?"
+    };
+
+    // Wire this to a button's OnClick, using Static binding, and drag that
+    // same button into the Button parameter field so it can check itself.
+    public void CheckButtonAnswer(Button clickedButton)
+    {
+        TMP_Text buttonText = clickedButton.GetComponentInChildren<TMP_Text>();
+        Image background = clickedButton.GetComponent<Image>();
+
+        if (buttonText == null || background == null) return;
+
+        bool isCorrect = correctQuestions.Contains(buttonText.text.Trim());
+        background.color = isCorrect ? correctColor : incorrectColor;
+    }
 
     private Dictionary<string, List<string>> questionBank = new Dictionary<string, List<string>>
     {
@@ -65,7 +91,7 @@ public class ButtonMenuManager : MonoBehaviour
     public void DelayAnswerSetup()
     {
         // waits 2 seconds and restarts the program with new answers + questions
-        Invoke(nameof(RunAnswerSetup), 2f);
+        Invoke(nameof(RunAnswerSetup), 0.5f);
     }
 
     void RunAnswerSetup()
@@ -89,6 +115,8 @@ public class ButtonMenuManager : MonoBehaviour
         List<string> questions = questionBank[selectedAns];
         for (int i = 0; i < optionButtons.Length; i++)
         {
+            Button button = optionButtons[i];
+            button.GetComponent<Image>().color = Color.white; 
             if (i < questions.Count)
             {
                 TMP_Text buttonText = optionButtons[i].GetComponentInChildren<TMP_Text>();
