@@ -12680,8 +12680,10 @@ MonoBehaviour:
   - table 1
   questionClues:
   - {fileID: 11400000, guid: 2517606988a09cf49af7b18ced82ece6, type: 2}
+  - {fileID: 11400000, guid: 7638ee9fbf17b4d46ba2b7d5b92f3fec, type: 2}
   clueGroupMatching:
   - Cake
+  - Horizon
 --- !u!1 &401061951
 GameObject:
   m_ObjectHideFlags: 0
@@ -13896,7 +13898,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2899911, y: -1, z: -10}
+  m_LocalPosition: {x: 0.28999114, y: -0.375, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15660,6 +15662,12 @@ MonoBehaviour:
     - {fileID: 2059707608}
     - {fileID: 400219617}
     - {fileID: 963633661}
+    - {fileID: 986897002}
+  - matchingAnswer: Horizon
+    clueObjects:
+    - {fileID: 1891040472}
+    - {fileID: 1787128325}
+    - {fileID: 400219617}
     - {fileID: 986897002}
   clueAmount: 2
   falseClueAmount: 2
@@ -17508,8 +17516,10 @@ MonoBehaviour:
   - whiteboard
   questionClues:
   - {fileID: 11400000, guid: 6a65fbef2eb0015478c1868afd71e513, type: 2}
+  - {fileID: 11400000, guid: 9019d32f4133a4ef3abe21cbcc4d399a, type: 2}
   clueGroupMatching:
   - Cake
+  - Horizon
 --- !u!1 &991374945
 GameObject:
   m_ObjectHideFlags: 0
@@ -25114,6 +25124,7 @@ GameObject:
   - component: {fileID: 1787128322}
   - component: {fileID: 1787128324}
   - component: {fileID: 1787128323}
+  - component: {fileID: 1787128325}
   m_Layer: 0
   m_Name: Comfy Chair 1
   m_TagString: Untagged
@@ -25241,6 +25252,25 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1787128325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787128321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe9b7196062124798e000adf8139e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueObject
+  clueDestinationPath:
+  - middle
+  - comfy chair 1
+  questionClues:
+  - {fileID: 11400000, guid: 1c32cc5b378904012a6dce347410074d, type: 2}
+  clueGroupMatching:
+  - Horizon
 --- !u!1 &1787716839
 GameObject:
   m_ObjectHideFlags: 0
@@ -26287,8 +26317,10 @@ MonoBehaviour:
   - big sofa
   questionClues:
   - {fileID: 11400000, guid: 020c069356c8a2542926424d7282ed80, type: 2}
+  - {fileID: 11400000, guid: 5f4059019d8834e44ac891f2d3439a65, type: 2}
   clueGroupMatching:
   - Cake
+  - Horizon
 --- !u!1 &1904407293
 GameObject:
   m_ObjectHideFlags: 0
