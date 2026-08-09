@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b745ea843e501247a548647d2461006, type: 3}
-  m_Name: Cake Computer Desk
+  m_Name: m4
   m_EditorClassIdentifier: Assembly-CSharp::ClueGroup
   clues:
-  - {fileID: 11400000, guid: 18e67c611f1f2f9448dc012cc0b5a997, type: 2}
-  falseClues:
-  - {fileID: 11400000, guid: ee315919bddc1d04ca4b1d5bf63b772c, type: 2}
+  - {fileID: 11400000, guid: c97518a804dd145cbaf36b52607286ac, type: 2}
+  falseClues: []

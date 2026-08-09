@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b745ea843e501247a548647d2461006, type: 3}
-  m_Name: Cake Right Table 1
+  m_Name: Horizon
   m_EditorClassIdentifier: Assembly-CSharp::ClueGroup
   clues:
-  - {fileID: 11400000, guid: dd7d6cc619979284288b0e96c39aa462, type: 2}
-  falseClues:
-  - {fileID: 11400000, guid: 8416098e10b3e5b4db44a4ac626bb665, type: 2}
+  - {fileID: 11400000, guid: 4cd2e23753cd9431f9a9a1059aa020d1, type: 2}
+  falseClues: []
