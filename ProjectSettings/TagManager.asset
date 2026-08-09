@@ -47,5 +47,8 @@ TagManager:
   - name: tops
     uniqueID: 3227041939
     locked: 0
+  - name: Player
+    uniqueID: 2922177707
+    locked: 0
   m_RenderingLayers:
   - Default
