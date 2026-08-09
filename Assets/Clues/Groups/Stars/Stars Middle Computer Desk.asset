@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Stars Middle Computer Desk
   m_EditorClassIdentifier: Assembly-CSharp::ClueGroup
   clues:
-  - {fileID: 11400000, guid: 2f66270ce3e8fa34fbfcd0ec66941f24, type: 2}
+  - {fileID: 11400000, guid: 3239dcebcceaf784f9a89bf51a173d60, type: 2}
   falseClues: []
